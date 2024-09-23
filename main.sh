@@ -610,7 +610,7 @@ apt install rclone -y
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "${REPO}Cfg/rclone.conf"
 cd /bin
-git clone  https://github.com/LunaticBackend/wondershaper.git
+git clone  https://github.com/magnific0/wondershaper.git
 cd wondershaper
 sudo make install
 cd
@@ -626,9 +626,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user oceantestdigital@gmail.com
-from oceantestdigital@gmail.com
-password jokerman77
+user marlina19191919@gmail.com
+from marlina19191919@gmail.com
+password 19191919marlina
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
@@ -837,7 +837,7 @@ if [ -f ~/.bashrc ]; then
 fi
 fi
 mesg n || true
-menu
+welcome
 EOF
 cat >/etc/cron.d/log_clear <<-END
 		8 0 * * * root /usr/local/bin/log_clear
